@@ -258,7 +258,7 @@ const App: React.FC = () => {
                       <span className={`text-[11px] font-bold ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Dynamic Styling</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <span className="text-[10px] bg-emerald-600 text-white px-2 py-1 rounded-md font-black">GEMINI AI</span>
+                      <span className="text-[10px] bg-emerald-600 text-white px-2 py-1 rounded-md font-black">GEN AI</span>
                       <span className={`text-[11px] font-bold ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>Expert Lab Assistant</span>
                     </div>
                   </div>
