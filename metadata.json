@@ -1,5 +1,0 @@
-{
-  "name": "Ohm's Law Circuit Builder",
-  "description": "An interactive 3D circuit simulator for learning electronics. Drag and drop components, visualize current flow, and verify Ohm's Law in real-time.",
-  "requestFramePermissions": []
-}
