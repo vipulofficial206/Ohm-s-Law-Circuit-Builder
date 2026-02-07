@@ -1,75 +1,75 @@
-# 🍎 Food Nutritionist – AI Based Food Recognition & Nutrition Analyzer
+# ⚡ Ohm’s Law Circuit Builder
 
 ## 📌 Project Overview
 
-Food Nutritionist is an Artificial Intelligence powered application that detects food items from images and provides their nutritional information. The system uses a Convolutional Neural Network (CNN) trained on the **Food-100 dataset** to classify food images and estimate dietary values such as calories, protein, carbohydrates, and fat content.
+Ohm’s Law Circuit Builder is an interactive educational web application designed to help students learn basic electrical circuit concepts. The application allows users to build a simple circuit and observe how **Voltage (V)**, **Current (I)**, and **Resistance (R)** change in real time according to Ohm’s Law.
 
-This project aims to help users understand their daily food intake and make healthier dietary decisions.
+The simulator visually demonstrates the relationship:
+
+[
+V = I \times R
+]
+
+By adjusting circuit parameters, users can instantly see how electrical quantities vary, making it a useful learning tool for beginners in electronics and physics.
 
 ---
 
 ## 🎯 Objectives
 
-* Automatically recognize food from an uploaded image
-* Provide nutrition details of the identified food
-* Assist users in calorie tracking and diet awareness
-* Offer dietary suggestions using a nutrition knowledge base
+* Teach fundamental electronics concepts interactively
+* Demonstrate Ohm’s Law using a live simulation
+* Allow students to experiment without physical hardware
+* Improve conceptual understanding of voltage, current, and resistance
 
 ---
 
 ## 🧠 Technologies Used
 
-* Python
-* TensorFlow / Keras
-* Convolutional Neural Networks (CNN)
-* FAISS (Facebook AI Similarity Search) for knowledge retrieval
-* Jupyter Notebook
-* REST API (foodapi.py)
+* React
+* TypeScript
+* Vite
+* HTML & CSS
+* Component-based UI architecture
 
 ---
 
-## 📂 Dataset Used
+## ⚙️ Features
 
-**Food-100 Dataset**
-
-The Food-100 dataset contains categorized food images belonging to 100 different food classes.
-It is used to train the CNN model to accurately identify food items from real-world images.
-
-Dataset Features:
-
-* Multiple food categories
-* Real-life food images
-* Suitable for image classification tasks
-* Used widely for food recognition research
+* Interactive circuit builder
+* Real-time voltage, current, and resistance calculation
+* Dynamic parameter adjustment
+* Instant feedback for learning
+* Educational physics visualization
 
 ---
 
-## ⚙️ System Workflow
+## 🧮 Ohm’s Law
 
-1. User uploads a food image
-2. CNN model processes the image
-3. Model predicts the food class
-4. System retrieves nutrition data from the knowledge base
-5. Nutrition details are displayed:
+Ohm’s Law defines the relationship between voltage, current, and resistance:
 
-   * Calories
-   * Protein
-   * Carbohydrates
-   * Fat
+* **V (Voltage)** – Electrical potential difference
+* **I (Current)** – Flow of electric charge
+* **R (Resistance)** – Opposition to current flow
+
+Formula:
+[
+V = I \times R
+]
 
 ---
 
-## 🏗️ Project Structure
+## 📂 Project Structure
 
 ```
-food_nutritionist/
-│── modeltrain2.ipynb        # CNN training notebook
-│── foodapi.py               # API for prediction
-│── build_faiss_index.py     # Nutrition knowledge base search
-│── foodmodels/              # Saved trained model
-│── nutrition/               # Nutrition information database
-│── KnowledgeBasenew/        # FAISS vector index
-│── output images            # Model prediction results
+Ohm-s-Law-Circuit-Builder/
+│── components/        # UI components for circuit elements
+│── services/          # Calculation logic
+│── App.tsx            # Main application
+│── constants.ts       # Circuit constants
+│── types.ts           # TypeScript interfaces
+│── index.tsx          # Entry point
+│── index.html
+│── vite.config.ts
 ```
 
 ---
@@ -79,46 +79,47 @@ food_nutritionist/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/vipulofficial206/food_nutritionist.git
-cd food_nutritionist
+git clone https://github.com/vipulofficial206/Ohm-s-Law-Circuit-Builder.git
+cd Ohm-s-Law-Circuit-Builder
 ```
 
-### 2. Install Requirements
+### 2. Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
-### 3. Run API
+### 3. Run the Application
 
 ```bash
-python foodapi.py
+npm run dev
 ```
 
-### 4. Predict
+### 4. Open Browser
 
-Upload a food image and the system will return the predicted food item and its nutritional values.
+```
+http://localhost:5173
+```
 
 ---
 
-## 📊 Output
+## 🧪 Learning Outcome
 
-The model predicts:
+This project helps users:
 
-* Food name
-* Calories
-* Protein
-* Carbohydrates
-* Fat
+* Understand electrical fundamentals
+* Visualize circuit behavior
+* Learn electronics without hardware components
 
 ---
 
 ## 🔮 Future Improvements
 
-* Mobile app integration
-* Real-time camera detection
-* Calorie tracking dashboard
-* Personalized diet recommendations
+* Series & parallel circuit simulation
+* Power calculation (P = VI)
+* Ammeter and voltmeter visualization
+* Mobile responsiveness
+* Dark mode
 
 ---
 
@@ -130,4 +131,4 @@ Vipul
 
 ## ⭐ Conclusion
 
-This project demonstrates the practical use of Deep Learning and Computer Vision in healthcare and nutrition monitoring systems. It can be extended into a diet assistant or smart health tracking application.
+This project demonstrates how web technologies can be used to simulate real-world physics systems. It combines programming, mathematics, and electronics to create an educational learning tool for students and beginners in electrical engineering.
